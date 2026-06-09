@@ -12,6 +12,11 @@
   --Laranja_claro: #FF841F;
 }
 
+:root {
+    --fonte_titulo: "Science Gothic", sans-serif;
+    --fonte_texto: "Source Serif 4";
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -45,7 +50,7 @@ header {
     }
 
     .titulo {
-        font-family: "Science Gothic", sans-serif;
+        font-family: var(--fonte_titulo);
         color: var(--cor_principal);
     }
 
@@ -53,7 +58,7 @@ header {
         text-decoration: none;
         color: var(--cor_principal);
         font-size: 1.1rem;
-        font-family: "Science Gothic", sans-serif;
+        font-family: var(--fonte_titulo);
     }
 
     a:hover {
@@ -92,7 +97,7 @@ body {
         justify-content: center;
         margin-top: 1rem;
         font-size: 2rem;
-        font-family: "Source Serif 4", serif;
+        font-family: var(--fonte_texto);
         color: var(--cor_principal);
         text-align: justify;
         margin: auto;
@@ -113,14 +118,14 @@ body {
 #titulo_sobremim {
     color: var(--Laranja_claro);
     text-align: center;
-    font-family: "Science Gothic", sans-serif;
+    font-family: var(--fonte_texto);
     padding-top: 2rem;
 }
 
 #texto {
     text-align: justify;
     padding: 2rem;
-    font-family: "Source Serif 4", serif;
+    font-family: var(--fonte_texto);
     line-height: 2rem;
 }
 
@@ -132,15 +137,28 @@ body {
 }
 
 .cursos {
+    margin: auto;
     background-color: var(--branco_gelo);
     width: 15rem;
     height: 300px;
+    font-family: ;
 }
 
-@media (min-width: 768px) {
+.cursos > h2 {
+    text-align: center;
+    font-family: var(--fonte_titulo);
+    color: var(--Laranja_claro);
+    font-size: 1rem;
+}
+
+.cursos > p {
+    text-align: center;
+}
+
+@media (min-width: 768px) { /*Tablets */
     
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) { /*Desktops */
     
 } 
