@@ -51,6 +51,12 @@ header {
     .titulo {
         font-family: var(--fonte_titulo);
         color: var(--cor_principal);
+        border: 1px solid var(--Laranja_claro);
+        padding: 0.5rem;
+    }
+
+    h1 {
+        box-shadow: 10px 2px 1px 2px var(--Laranja_claro);
     }
 
     a {
