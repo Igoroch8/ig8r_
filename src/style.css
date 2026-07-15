@@ -260,10 +260,14 @@ body {
     
     /* 2. Impede que a imagem ultrapasse o tamanho da tela do celular */
     .inicio #imagem { 
-        width: 85%; 
+        width: 50%; 
         max-width: 25rem; 
         height: auto; 
         aspect-ratio: 1/1; 
+    }
+
+    .inicio #frase {
+        font-size: 1.5rem;
     }
     
     /* 3. Ajusta o menu do topo para os links não embolarem no celular */
@@ -271,8 +275,57 @@ body {
         flex-direction: column; 
         gap: 10px; 
     }
+
+    .formacao .cursos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.3rem;
+        margin: 0 auto;
+        background-color: var(--branco_gelo);
+        width: 70%; 
+        min-height: 300px;
+        border: 0.2rem solid var(--Laranja_claro);
+        border-radius: 0.5rem;
+    }
 }
 
 @media (min-width: 1024px) { /*Desktops */
-    
+
+    .inicio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: auto;
+    background-color: var(--verde_esgoto);
+    height: 93vh;
+    justify-content: center;
+        align-content: center;
+
+    #imagem {
+        display: flex;
+        width: 25rem;
+        height: 400px;
+        border-radius: 50%;
+        margin: 1rem auto;
+        border: 2px solid var(--Laranja_claro);
+        background-color: var(--cor_principal);
+    }
+
+    #frase {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1rem;
+        font-size: 2rem;
+        font-family: var(--fonte_texto);
+        color: var(--cor_principal);
+        text-align: justify;
+        margin: auto;
+        padding: 1rem;
+    }
+
+}
+
 }
